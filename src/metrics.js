@@ -81,8 +81,8 @@ function measureCapHeightRatio(testParent, fontFamily, width, height) {
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(0,0, ctx.canvas.width, ctx.canvas.height);
     ctx.fillStyle = "#000000";
-    ctx.textBaseline = "top";
-    ctx.fillText('E',0,0);
+    ctx.textBaseline = "middle";
+    ctx.fillText('E',0,height/2);
 
     // Grab the central column of pixels
     var middleYline = ctx.getImageData(Math.ceil(canvas.width/2), 0, 1, canvas.height);
